@@ -6,8 +6,7 @@ var words = []
 
 byline(fs.createReadStream('corpus.txt', { encoding: 'utf8' }))
   .on('data', function (line) {
-    var word = line.toLowerCase()
-    words.push(word)
+    words.push(line)
   })
   .on('end', function(){
     words = uniq(words.sort())

@@ -1,25 +1,23 @@
-# an-array-of-spanish-words
+# an-array-of-french-words
 
-An array of ~250,000 Spanish words. Works with Node and Browserify.
+An array of ~210,000 French words. Works with Node and Browserify.
 
 I found the list in this repo: https://github.com/ManiacDC/TypingAid. I'm not
-sure of it's origin, but it's the most extensive Spanish word list I could find.
-
-See also [an-array-of-english-words])https://github.com/zeke/an-array-of-english-words)
+sure of it's origin, but it's the most extensive French word list I could find.
 
 ## Programmatic Usage
 
 To use the module in Javascript code, install it locally:
 
 ```sh
-npm install an-array-of-spanish-words --save
+npm install an-array-of-french-words --save
 ```
 
 Then:
 
 ```js
-var words = require("an-array-of-spanish-words")
-var funWords = words.filter(function(w) { return !!w.match(/^fun/i) })
+var words = require("an-array-of-french-words")
+var funWords = words.filter(word => !!word.match(/^fun/i))
 console.log(funWords)
 ```
 
@@ -28,9 +26,14 @@ console.log(funWords)
 There's a CLI that prints all words to STDOUT. Install it globally:
 
 ```sh
-npm i -g an-array-of-spanish-words
-palabras | grep queso
+npm i -g an-array-of-french-words
+mots | grep toufle
 ```
+
+## See Also
+
+- [an-array-of-english-words])https://github.com/zeke/an-array-of-english-words)
+- [an-array-of-french-words])https://github.com/zeke/an-array-of-french-words)
 
 ## Dependencies
 
@@ -40,7 +43,6 @@ None
 
 - [byline](https://github.com/jahewson/node-byline): simple line-by-line stream reader
 - [lodash.uniq](https://github.com/lodash/lodash): The lodash method `_.uniq` exported as a module.
-
 
 ## License
 
