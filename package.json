@@ -1,0 +1,35 @@
+{
+  "name": "an-array-of-spanish-words",
+  "version": "1.0.0",
+  "description": "An array of ~250,000 Spanish words. Works with Node and Browserify.",
+  "main": "palabras.json",
+  "bin": {
+    "palabras": "./cli.js",
+    "an-array-of-spanish-words": "./cli.js"
+  },
+  "scripts": {
+    "build": "node build.js > palabras.json"
+  },
+  "repository": "https://github.com/zeke/an-array-of-spanish-words",
+  "keywords": [
+    "spanish",
+    "words",
+    "language",
+    "list",
+    "dictionary",
+    "espanol",
+    "palabras",
+    "corpus",
+    "wordlist"
+  ],
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeke/an-array-of-spanish-words/issues"
+  },
+  "homepage": "https://github.com/zeke/an-array-of-spanish-words#readme",
+  "devDependencies": {
+    "byline": "^4.2.1",
+    "lodash.uniq": "^4.3.0"
+  }
+}
