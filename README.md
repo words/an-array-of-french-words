@@ -32,8 +32,8 @@ mots | grep toufle
 
 ## See Also
 
-- [an-array-of-english-words]https://github.com/zeke/an-array-of-english-words)
-- [an-array-of-spanish-words]https://github.com/zeke/an-array-of-spanish-words)
+- [an-array-of-english-words](https://github.com/zeke/an-array-of-english-words)
+- [an-array-of-spanish-words](https://github.com/zeke/an-array-of-spanish-words)
 
 ## Dependencies
 
