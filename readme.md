@@ -4,7 +4,7 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-List of ~275,000 French words.
+List of ~336,000 French words.
 Derived from [the Letterpress word list][letterpress].
 
 ## Install
