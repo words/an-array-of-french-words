@@ -1,35 +1,67 @@
 {
   "name": "an-array-of-french-words",
   "version": "1.0.0",
-  "description": "An array of ~210,000 French words. Works with Node and Browserify.",
-  "main": "mots.json",
+  "description": "List of ~336,000 French words",
+  "license": "MIT",
+  "keywords": [
+    "array",
+    "list",
+    "french",
+    "français",
+    "words",
+    "mots",
+    "language",
+    "dictionary",
+    "corpus",
+    "wordlist"
+  ],
+  "repository": "words/an-array-of-french-words",
+  "bugs": "https://github.com/words/an-array-of-french-words/issues",
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
+  "contributors": [
+    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
+  ],
+  "main": "index.json",
   "bin": {
     "mots": "./cli.js",
     "an-array-of-french-words": "./cli.js"
   },
-  "scripts": {
-    "build": "node build.js > mots.json"
-  },
-  "repository": "https://github.com/zeke/an-array-of-french-words",
-  "keywords": [
-    "french",
-    "words",
-    "language",
-    "list",
-    "dictionary",
-    "français",
-    "mots",
-    "corpus",
-    "wordlist"
+  "files": [
+    "index.json",
+    "cli.js"
   ],
-  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zeke/an-array-of-french-words/issues"
-  },
-  "homepage": "https://github.com/zeke/an-array-of-french-words#readme",
+  "dependencies": {},
   "devDependencies": {
-    "byline": "^4.2.1",
-    "lodash.uniq": "^4.3.0"
+    "bail": "^1.0.0",
+    "concat-stream": "^2.0.0",
+    "prettier": "^1.0.0",
+    "remark-cli": "^7.0.0",
+    "remark-preset-wooorm": "^6.0.0",
+    "tape": "^4.0.0",
+    "xo": "^0.25.0"
+  },
+  "scripts": {
+    "generate": "node build",
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "test-api": "node test",
+    "test": "npm run format && npm run test-api"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
+  },
+  "xo": {
+    "prettier": true,
+    "esnext": false
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }
